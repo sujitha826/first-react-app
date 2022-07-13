@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react';                       // React library to create UI elements using some methods
+import ReactDOM from 'react-dom/client';         // To render the components/elements(vitrual DOM) to the (real DOM)browser screen, React needs React-DOM to be able to dispaly the elements to the real screen
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+root.render(  
     <App />
-  </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
